@@ -1,0 +1,15 @@
+def open_or_senior(data):
+  """
+  На входе дается список пар (возраст, гандикап).
+  Функция выдает список категорий игроков.
+  Senior (возраст 55+, гандикап 8+), все остальные - Open.
+  """
+  
+    res = []
+    for age,handicap in data:
+        if age >= 55 and handicap > 7:
+            res.append("Senior")
+        else:
+            res.append("Open")
+    return res
+            
